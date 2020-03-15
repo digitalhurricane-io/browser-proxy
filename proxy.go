@@ -13,7 +13,7 @@ func proxyHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	targetUrl := r.URL.Query().Get("next")
+	targetUrl := r.Header.Get("target")
 	if targetUrl == "" {
 		w.WriteHeader(http.StatusBadRequest)
 		return

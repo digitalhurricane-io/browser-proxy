@@ -1,4 +1,4 @@
 
-encode next query param with javascripts encodeURIComponent()
+The request will be proxied to the url in the "target" header.
 
-http://127.0.0.1:9100?next=http%3A%2F%2F127.0.0.1%3A9101%3Farg1%3D2%26arg2%3D3
+So for example, you can add a "target" header with a value of "http://127.0.0.1:9101/status?arg1=a"
