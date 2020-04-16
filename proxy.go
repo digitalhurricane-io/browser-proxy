@@ -52,8 +52,8 @@ func NewSingleHostReverseProxy(target *url.URL) *httputil.ReverseProxy {
 
 		req.Header.Del("target")
 
-		// Remove accept-encoding header set by browser as it can,
-		// screw up the response. We don't want anything getting gzipped
+		// Remove accept-encoding header set by browser as it can
+		// screw up the response. We don't want anything getting gzipped.
 		req.Header.Set("Accept-Encoding", "")
 
 		if _, ok := req.Header["User-Agent"]; !ok {
