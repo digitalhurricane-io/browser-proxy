@@ -1,10 +1,10 @@
-##Browser Proxy
+## Browser Proxy
 
 Great for making requests from the browser to servers without CORS support.
 
 Also great if you need to make a request in the browser to an endpoint that doesn't support ssl.
 
-###To Use:
+### To Use:
 
 A.) Run the app on a server. Personally I use google cloud run for this. 
 You can use the deploy.cloudrun.sh script to deploy to cloud run.
