@@ -52,10 +52,10 @@ func NewSingleHostReverseProxy(target *url.URL) *httputil.ReverseProxy {
 
 		req.Header.Del("target")
 
-		//if _, ok := req.Header["User-Agent"]; !ok {
-		//	// explicitly disable User-Agent so it's not set to default value
-		//	req.Header.Set("User-Agent", "")
-		//}
+		if _, ok := req.Header["User-Agent"]; !ok {
+			// explicitly disable User-Agent so it's not set to default value
+			req.Header.Set("User-Agent", "")
+		}
 	}
 	return &httputil.ReverseProxy{Director: director}
 }
