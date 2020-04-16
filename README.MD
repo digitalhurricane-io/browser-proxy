@@ -6,8 +6,9 @@ Also great if you need to make a request in the browser to an endpoint that does
 
 ### To Use:
 
-A.) Run the app on a server. Personally I use google cloud run for this. 
-You can use the deploy.cloudrun.sh script to deploy to cloud run.
+A.) Run the app on a server. The proxy runs on the port specified in the PORT environmental variable. 
+
+If you want to deploy to google cloud run for easy and cheap deployment, you can use the deploy.cloudrun.sh script.
 Just replace occurrences of "my-project" in the script with the name of your project.
 
 B.) Make a request to the proxy url and add a "target" header with the value set to the destination url.
