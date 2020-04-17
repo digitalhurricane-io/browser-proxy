@@ -1,4 +1,4 @@
-## Browser Proxy
+## Cors Unblocker
 
 Great for making requests from the browser to servers without CORS support.
 

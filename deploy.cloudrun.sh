@@ -3,6 +3,6 @@
 
 gcloud config set project my-project
 
-gcloud builds submit --tag gcr.io/my-project/browser-proxy
+gcloud builds submit --tag gcr.io/my-project/cors-unblocker
 
-gcloud run deploy --image gcr.io/my-project/browser-proxy --platform managed
+gcloud run deploy --image gcr.io/my-project/cors-unblocker --platform managed
